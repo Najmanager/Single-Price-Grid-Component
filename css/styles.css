@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: hsl(204, 43%, 93%);
+    font-family: 'Karla', sans-serif;
+}
+
+.container {
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 43vw;
+    border-radius: .3em;
+    box-shadow: 0 0 1em .5em rgba(0,0,0,.1);
+}
+
+p {
+    margin: 0;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    margin-bottom: .8em;
+}
+
+.dollar {
+    font-size: 2em;
+}
+
+.opacity-lower {
+    opacity: .5;
+    padding: 1em;
+
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.column1-p {
+    color: #fff;
+    opacity: .8;
+    margin-bottom: 2em;
+}
+
+li {
+    color: #fff;
+    opacity: .5;
+    line-height: 1.4;
+}
+
+h2 {
+    color: hsl(179, 62%, 43%);
+    margin: 0;
+    margin-bottom: 1em;
+}
+
+button {
+    cursor: pointer;
+    background-color: hsl(71, 73%, 54%);
+    border: 0;
+    color: #fff;
+    font-weight: 700;
+    width: 100%;
+    border-radius: .3em;
+    font-size: 1em;
+    padding: 1em;
+    box-shadow: 0 1em 1em -1em rgba(0,0,0,.2);
+    transition: 250ms;
+}
+
+button:hover {
+    box-shadow: 0 0em 3px hsl(71, 73%, 54%);
+    background-color: #fff;
+    color: hsl(71, 73%, 54%);
+
+}
+
+.limon {
+    color: hsl(71, 73%, 54%);
+    margin-bottom: .5em
+}
+
+.gray {
+    color: hsl(218, 22%, 67%);
+}
+
+h3 {
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+h3:not([class]) {
+    color: #fff;
+    margin: 0;
+    padding-bottom: 1em;
+}
+
+.grid-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width:31.25em){
+    .container {
+        width: 90vw;
+    }
+    .grid-columns {
+        display: block;
+    }
+}
+
+@media (min-width:31.25em) and (max-width:60em) {
+    .container {
+        width: 75vw;
+    }
+
+    .grid-columns {
+        display: block;
+    }
+}
+
+.column1,
+.column2 {
+    background-color: hsl(179, 62%, 43%);
+    padding: 2em;
+}
+
+.column2 {
+    background-color: hsl(179, 62%, 43%);
+    opacity: .85;
+}
+
+.join {
+    padding: 2em;
+}
+
